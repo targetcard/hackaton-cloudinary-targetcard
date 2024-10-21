@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'Creepster', cursive;
+  overflow-x: hidden;
+  background-color: #000;
+
+  background-image: url('../images/imagen-galeria.webp');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.in-galery {
+  position: absolute;
+  z-index: 1000;
+  top: 50px;
+  left: 60px;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.85;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.halloween-container {
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.gallery-container {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 3px solid #ff6600;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 20px #ff6600, 0 0 30px #ff6600 inset;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.gallery-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  margin-top: 60px;
+  font-family: 'Nosifer', cursive;
+  text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000;
+  animation: pulsate 2s infinite alternate;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+  gap: 20px;
+}
+
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0px 0px 7px 1px #ff0000;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-wrapper:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ff0000;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.not-image {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.not-image h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #ff6600;
+  text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000;
+  animation: pulsate 2s infinite alternate;
+}
+
+.not-image span:first-child {
+  animation: point 1s infinite;
+  animation-delay: 100ms;
+}
+
+.not-image span:nth-child(2) {
+  animation: point 1s infinite;
+  animation-delay: 300ms;
+}
+
+.not-image span:nth-child(3) {
+  animation: point 1s infinite;
+  animation-delay: 600ms;
+}
+
+@keyframes point {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .image-grid {
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .horror-title {
+    font-size: 2rem;
+  }
+}
+
+@keyframes pulsate {
+  0% {
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000;
+  }
+  100% {
+    text-shadow: 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000;
+  }
+}

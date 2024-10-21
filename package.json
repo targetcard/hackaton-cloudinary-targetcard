@@ -1,0 +1,48 @@
+{
+  "name": "cloudinary-targetcard",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "description": "Target Card es una plataforma de tarjetas de presentación NFC personalizadas y de creación de perfiles digitales. Este proyecto fue creado para el hackatón de Cloudinary, integrando una edición especial de Halloween donde los usuarios pueden personalizar sus tarjetas con diseños temáticos y compartir su perfil digital de forma única y creativa.",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace=client\" \"npm run dev --workspace=server\"",
+    "dev:client": "npm run dev --workspace=client",
+    "dev:server": "npm run dev --workspace=server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Target",
+    "Card",
+    "Tarjeta",
+    "Inteligente",
+    "Perfil",
+    "links",
+    "Redes sociales",
+    "Publicidad",
+    "Promoción",
+    "Halloween",
+    "Terror",
+    "Miedo",
+    "Espeluznante",
+    "Imágenes",
+    "Historias",
+    "Personalización"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+"
+  },
+  "author": "Target Card <contacto@targetcard.com.mx>",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
