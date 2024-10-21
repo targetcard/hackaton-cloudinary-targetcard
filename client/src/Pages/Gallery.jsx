@@ -58,7 +58,7 @@ export default function Gallery() {
           ) : (
             <div className='not-image'>
               <h2>
-                No hay imagenes para mostrar <span>.</span>
+                Cargando <span>.</span>
                 <span>.</span>
                 <span>.</span>
               </h2>
