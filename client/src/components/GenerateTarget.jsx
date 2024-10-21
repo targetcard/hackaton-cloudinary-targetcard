@@ -132,7 +132,7 @@ export function GenerateTarget() {
     <>
       <audio ref={musicRef} loop>
         <source
-          src='https://res.cloudinary.com/targetcard/video/upload/v1729056839/targetcard/halloween-music.mp4'
+          src='https://res.cloudinary.com/targetcard24/video/upload/v1729056839/targetcard/halloween-music.mp4'
           type='audio/mp3'
         />
       </audio>
