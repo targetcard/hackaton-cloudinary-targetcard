@@ -141,7 +141,7 @@ export function GenerateTarget() {
         <div className='card-preview'>
           <h3>Tarjeta NFC Predeterminada</h3>
           <img
-            src='https://res.cloudinary.com/targetcard/image/upload/v1728965188/targetcard/tarjeta.png'
+            src='https://res.cloudinary.com/targetcard24/image/upload/f_auto,q_auto/v1/targetcard/tarjeta'
             alt='Tarjeta predeterminada'
             className='card-image'
           />

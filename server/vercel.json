@@ -10,7 +10,6 @@
       "use": "@vercel/static"
     }
   ],
-
   "routes": [
     {
       "src": "/api/(.*)",
